@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   	<title>CCPCIS Recruitment Form</title>
-  	<link rel="icon" type="image/x-icon" href="logo_icon.ico">
+  	<link rel="icon" type="image/x-icon" href="logo_lamon_icon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href='fonts/fonts.css' rel='stylesheet' type='text/css'>
@@ -200,20 +200,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.min.js"></script>
-	<script>
-	    var form = document.getElementById('contactForm');
-	form.addEventListener("submit", e => {
-	  e.preventDefault();
-	  fetch(form.action, {
-	      method : "POST",
-	      body: new FormData(document.getElementById("contactForm")),
-	  }).then(
-	      response => response.json()
-	  ).then((html) => {
-	    location.replace("https://www.w3schools.com");
-	  });
-	});
-	</script>
 	</body>
 </html>
 
